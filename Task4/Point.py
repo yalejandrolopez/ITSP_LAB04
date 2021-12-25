@@ -16,7 +16,7 @@ class Point(Shape):
         return round(math.sqrt(pow(self.x - x2, 2) + pow(self.y - y2, 2)), 2)
 
     def toString(self):
-        return "({},{})".format(self.x, self.y)
+        return "({},{})".format(int(self.x), int(self.y))
 
     def getX(self):
         return self.x

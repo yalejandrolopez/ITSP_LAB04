@@ -22,9 +22,9 @@ class TestPoint(unittest.TestCase):
         self.assertEqual(20, test_point.getY())
         self.assertEqual(10, test_point.getX())
 
-    def toString(self):
+    def test_toString(self):
         test_point = Point.Point(15, 35)
-        self.assertEqual("(15,35)"  , test_point.toString())
+        self.assertEqual("(15,35)" , test_point.toString())
 
     def test_distance(self):
         test_point = Point.Point(15, 35)
@@ -40,35 +40,35 @@ class TestPoint(unittest.TestCase):
         
     def test_setY(self):
         test_point  =  Point.Point(15, 35)
-        test_point.setX(50)
-        self.assertEqual(50, test_point.getX())
+        test_point.setY(50)
+        self.assertEqual(50, test_point.getY())
 
-    def text_getStrokeWidth(self):
+    def test_getStrokeWidth(self):
         test_point = Point.Point(15, 35)
         test_point.strokeWidth=4
         self.assertEqual(4, test_point.getStrokeWidth())
 
-    def text_setStrokeWidth(self):
+    def test_setStrokeWidth(self):
         test_point = Point.Point(15, 35)
         test_point.setStrokeWidth(10)
         self.assertEqual(10, test_point.strokeWidth)
 
-    def text_getStrokeColor(self):
+    def test_getStrokeColor(self):
         test_point = Point.Point(15, 35)
         test_point.setStrokeColor('red')
         self.assertEqual('red', test_point.getStrokeColor())
 
-    def text_setStrokeColor(self):
+    def test_setStrokeColor(self):
         test_point = Point.Point(15, 35)
-        test_point.setStrokeColor='red'
-        self.assertEqual('red', test_point.setStrokeColor())
+        test_point.setStrokeColor('red')
+        self.assertEqual('red', test_point.strokeColor)
 
-    def text_getFillColor(self):
+    def test_getFillColor(self):
         test_point = Point.Point(15, 35)
         test_point.setFillColor('black')
         self.assertEqual('black', test_point.getFillColor())
 
-    def text_setFillColor(self):
+    def test_setFillColor(self):
         test_point = Point.Point(15, 35)
         test_point.fillColor='black'
         self.assertEqual('black', test_point.getFillColor())
@@ -126,32 +126,32 @@ class TestRectangle(unittest.TestCase):
         test_rec.setHeight(20)
         self.assertEqual(20, test_rec.height)
 
-    def text_getStrokeWidth(self):
+    def test_getStrokeWidth(self):
         test_rec = Rectangle.Rectangle(Point.Point(15, 35), 10, 10)
         test_rec.strokeWidth = 4
         self.assertEqual(4, test_rec.getStrokeWidth())
 
-    def text_setStrokeWidth(self):
+    def test_setStrokeWidth(self):
         test_rec = Rectangle.Rectangle(Point.Point(15, 35), 10, 10)
         test_rec.setStrokeWidth(10)
         self.assertEqual(10, test_rec.strokeWidth)
 
-    def text_getStrokeColor(self):
+    def test_getStrokeColor(self):
         test_rec = Rectangle.Rectangle(Point.Point(15, 35), 10, 10)
         test_rec.setStrokeColor('red')
         self.assertEqual('red', test_rec.getStrokeColor())
 
-    def text_setStrokeColor(self):
+    def test_setStrokeColor(self):
         test_rec = Rectangle.Rectangle(Point.Point(15, 35), 10, 10)
-        test_rec.setStrokeColor = 'red'
-        self.assertEqual('red', test_rec.setStrokeColor())
+        test_rec.setStrokeColor('red')
+        self.assertEqual('red', test_rec.strokeColor)
 
-    def text_getFillColor(self):
+    def test_getFillColor(self):
         test_rec = Rectangle.Rectangle(Point.Point(15, 35), 10, 10)
         test_rec.setFillColor('black')
         self.assertEqual('black', test_rec.getFillColor())
 
-    def text_setFillColor(self):
+    def test_setFillColor(self):
         test_rec = Rectangle.Rectangle(Point.Point(15, 35), 10, 10)
         test_rec.fillColor = 'black'
         self.assertEqual('black', test_rec.getFillColor())
@@ -196,32 +196,32 @@ class TestCircle(unittest.TestCase):
         test_cir.setRadious(10)
         self.assertEqual(10, test_cir.radius)
 
-    def text_getStrokeWidth(self):
+    def test_getStrokeWidth(self):
         test_cir = Circle.Circle(Point.Point(15, 35), 10)
         test_cir.strokeWidth = 4
         self.assertEqual(4, test_cir.getStrokeWidth())
 
-    def text_setStrokeWidth(self):
+    def test_setStrokeWidth(self):
         test_cir = Circle.Circle(Point.Point(15, 35), 10)
         test_cir.setStrokeWidth(10)
         self.assertEqual(10, test_cir.strokeWidth)
 
-    def text_getStrokeColor(self):
+    def test_getStrokeColor(self):
         test_cir = Circle.Circle(Point.Point(15, 35), 10)
         test_cir.setStrokeColor('red')
         self.assertEqual('red', test_cir.getStrokeColor())
 
-    def text_setStrokeColor(self):
+    def test_setStrokeColor(self):
         test_cir = Circle.Circle(Point.Point(15, 35), 10)
-        test_cir.setStrokeColor = 'red'
-        self.assertEqual('red', test_cir.setStrokeColor())
+        test_cir.setStrokeColor('red')
+        self.assertEqual('red', test_cir.strokeColor)
 
-    def text_getFillColor(self):
+    def test_getFillColor(self):
         test_cir = Circle.Circle(Point.Point(15, 35), 10)
         test_cir.setFillColor('black')
         self.assertEqual('black', test_cir.getFillColor())
 
-    def text_setFillColor(self):
+    def test_setFillColor(self):
         test_cir = Circle.Circle(Point.Point(15, 35), 10)
         test_cir.fillColor = 'black'
         self.assertEqual('black', test_cir.getFillColor())

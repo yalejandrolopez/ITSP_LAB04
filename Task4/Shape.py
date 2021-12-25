@@ -12,7 +12,7 @@ class Shape:
         return self.strokeColor
 
     def getFillColor(self):
-        return self.getFillColor
+        return self.fillColor
 
     def setStrokeWidth(self, StrokeWidth):
         self.strokeWidth=StrokeWidth
